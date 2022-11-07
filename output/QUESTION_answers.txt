@@ -1,0 +1,27 @@
+
+
+1 - Quantas sequências de DNA de paciente sequenciados temos nos arquivos de fastqs R1 e R2 respectivamente ?
+Resposta: Temos 64276 reads sequenciados no arquivo fastq R1 e 64276 reads no R2.
+
+2 - Sobre o genoma humano hg19, quantos contigs tem o nosso genoma hg19 (hg19.fasta) aqui disponibilizado para este pipeline ?
+Resposta: 93 contigs (sendo 25 contigs dos cromossomos 1 ao 22, MT, X e Y).
+
+3 - Quantos alinhamentos há na região chr17:41197694-41197819 ? 
+Resposta: 978 alinhamentos.
+
+4 - Quantos alinhamentos não conseguiram ser mapeados (unmapped alignments ?)
+Resposta: 2663 alinhamentos nao conseguiram ser mapeados. 
+
+
+5 - Realize o alinhamento das sequências FASTQ contra o genoma de referência hg19 aqui disponibilizado, e realize a chamada de variantes utilizando a região alvo BRCA.list (interesse apenas na região dos genes BRCA1 e BRCA2).  Realize a anotação de dados funcionais usando o SNPEFF.
+ Com este arquivo em mãos , responda as seguintes perguntas ?
+
+5.1- Quantas variantes existem com impacto funcional (Annotation_Impact) do tipo HIGH, MODERATE, LOW ? 
+Resposta:
+HIGH - 0
+MODERATE - 2
+LOW - 2
+MODIFIER - 6
+
+Existe alguma variante em HIGH ? Qual é cromossomo, posição e a alteração ?
+Nao apareceu variante em HIGH neste dataset. Tive que rodar o SnpEff em uma versao mais antiga (SnpEff	4.3t - 2017-11-2), pois deu erro de "estouro"("overflow") de memoria no Java na versao 5.0.
